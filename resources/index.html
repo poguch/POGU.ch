@@ -20,23 +20,37 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
+<style>
+  .pre-scrollable {
+    max-height: 515px;
+    overflow-y: scroll;
+
+    
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+a{
+  color: grey;
+}
+
+</style>
 </head>
 <body>
     <div class="container-fluid">
         
         <div class="row">
-            <div class="col-sm-12 p-5">
+            <div class="col-sm-12 pl-5 pr-5">
                 
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="#">♫</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                       <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Dashboard</a>
                         </li>
@@ -54,7 +68,7 @@
                             Theorie
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/resources/strumming.html">Strumming</a>
+                            <a class="dropdown-item" href="/strumming.html">Strumming</a>
                           </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -78,16 +92,20 @@
                             Downloads
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Wallpapers</a>
+                            <a class="dropdown-item" href="#">Magazin</a>
+                            <a class="dropdown-item" href="#">Comics</a>
                           </div>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Magazin</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Shop</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resourcen
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Wallpapers</a>
+                            <a class="dropdown-item" href="#">Magazin</a>
+                            <a class="dropdown-item" href="#">Comics</a>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -96,7 +114,7 @@
         </div>
         
         <div class="row pl-5 pr-5">
-          <div class="col-sm-8">
+          <div class="col-sm-7">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -128,7 +146,7 @@
               </a>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-5 pre-scrollable">
 
             <div class="powr-social-feed" id="a36aeac2_1672046353"></div><script src="https://www.powr.io/powr.js?platform=bootstrap"></script>
           </div>
@@ -137,20 +155,16 @@
         <div class="row pl-5 pt-5">
           <div class="col-sm-4">
             <div class="card" style="width: 25rem;">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1533274684449-a00e3142ce2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="Card image cap">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1506031186041-3af30076d87f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Nützliche Seiten für Gitarristen</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item">JustinGuitar.com</li>
+                <li class="list-group-item">GuitarTricks.com</li>
+                <li class="list-group-item">TrueFire.com</li>
               </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
             </div>
           </div>
           <div class="col-sm-7"><h1>Über diese Webseite</h1>
@@ -159,8 +173,22 @@
             <h1>Über mich</h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ad distinctio laborum dicta cupiditate, ea, molestiae neque, quibusdam sit provident eos nisi? Dolorem, ratione. Incidunt, iste vero ducimus itaque aliquid adipisci quidem, voluptatum repellendus error neque atque dolores hic nulla.
           <hr>
-          <h1>Online Shop</h1>
+          <h1>Shop</h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ad distinctio laborum dicta cupiditate, ea, molestiae neque, quibusdam sit provident eos nisi? Dolorem, ratione. Incidunt, iste vero ducimus itaque aliquid adipisci quidem, voluptatum repellendus error neque atque dolores hic nulla.
+          <br>
+          <br>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Ricardo.ch
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Anibis.ch
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Tutti.ch
+  </label>
+</div>
+            <hr>
         </div>
           <hr>
           
